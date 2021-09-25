@@ -15,5 +15,15 @@ defaults:
       layout: "post"
   - scope:
       path: ""
+      type: "about"
+    values:
+      layout: "web-default"
+  - scope:
+      path: ""
+      type: "easy_forms"
+    values:
+      layout: "web-default"
+  - scope:
+      path: ""
     values:
       layout: "default"
