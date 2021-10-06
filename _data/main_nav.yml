@@ -1,0 +1,8 @@
+- name: Home
+  link: /
+- name: Portfolio
+  link: /techui.html
+- name: Blog
+  link: 'https://rasta-code.mitchkoj.com'
+- name: Contact
+  link: "#contact"
