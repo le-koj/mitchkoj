@@ -1,15 +1,78 @@
 ---
-title: Staff
+title: Home
 ---
 
-<h1>Staff</h1>
+<header>
+  <p id="about-text">
+    Professional Web Developer and Consultant Based in Los Angelos, California.  
+    Highly experienced in custom Static Website Development and Shopify Website
+    Setup/Consultation.
+  </p>
+  <article class="board-content">
+    <img src="/assets/images/imac-ipad-iphone-300111806.png" alt="">
+    <div class="wrapper">
+      <h4>
+        Fully responsive,
+        custom designed
+        Webite. Shopify Website consultant.
+      </h4>
+      <button href="#">
+        View Portfolio
+      </button>
+   </div>
+  </article>
+</header>
+<section class="service-section">
+  <article>
+    <div class="service-wrapper">
+      <img src="/assets/svg/tools-and-utensils-programmer-svgrepo-com.svg" alt="">
+      <h6>Budget Friendly, Custom Website</h6>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Labore ipsam quos commodi quidem perspiciatis ad rem minima 
+        minus nostrum. Praesentium, debitis aut 
+      </p>
+    </div>
+  </article>
+  <article>
+    <div class="service-wrapper">
+      <img src="/assets/svg/shopify-svgrepo-com.svg" alt="">
+      <h6>Shopify Website Consultation</h6>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Labore ipsam quos commodi quidem perspiciatis ad rem minima 
+        minus nostrum. Praesentium, debitis aut
+      </p>
+    </div>
+  </article>
+  <article>
+    <div class="service-wrapper">
+      <img src="/assets/svg/server-hosting-svgrepo-com.svg" alt="">
+      <h6>Continuous Maintenance & Free Hosting</h6>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Labore ipsam quos commodi quidem perspiciatis ad rem minima 
+        minus nostrum. Praesentium, debitis aut
+      </p>
+    </div>
+  </article>
+</section>
+<section class="contact-section">
+    <div class="shape"></div>
+    
+    <form action="">
+      <h3>Contact for Consultation</h3>
 
-<ul>
-  {% for author in site.authors %}
-    <li>
-      <h2><a href="{{ author.url }}">{{ author.name }}</a></h2>
-      <h3>{{ author.position }}</h3>
-      <p>{{ author.content | markdownify }}</p>
-    </li>
-  {% endfor %}
-</ul>
+      <label for="name">Full Name</label>
+      <input type="text" placeholder="John Doe" id="name">
+
+      <label for="email">Email</label>
+      <input type="text" placeholder="johndoe@example.com" id="email">
+
+      <label for="message">Message</label>
+      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+      <button>Submit</button>
+    </form>
+    <div class="shape last-child"></div>
+</section>
