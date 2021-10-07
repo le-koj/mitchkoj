@@ -31,6 +31,9 @@
     {% if page.title == "Newspaper" %}
         <link rel="stylesheet" href="/assets/css/newspaper.css">
     {% endif %}
+    {% if jekyll.environment == "production" %}
+        {% include analytics.html %}
+    {% endif %}
 </head>
 <body>
     {% include navigation.html %}
