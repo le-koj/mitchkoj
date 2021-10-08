@@ -27,3 +27,12 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+url: "https://mitchkoj.com"
+baseurl: "/"
+
+google_analytics: 'G-3YGRSWXYPE'

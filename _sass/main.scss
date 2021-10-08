@@ -39,7 +39,7 @@ a {
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: rgb(160, 33, 33);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -83,6 +83,18 @@ a {
   }
 }
 
+#home-link {
+  /**/
+  padding: 2px;
+  /**/
+  padding-top: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav-links {
+  transform: translateY(10%);
+}
 
 .fa-align-right {
   margin-left: 10px;
@@ -319,20 +331,24 @@ footer {
 }
 
 .footer-main-content ul {
+  width: 50%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /**
   align-self: flex-start;
   /**/
+  align-content: center;
   margin: 0 auto;
   /**
   border: 1px solid blue;
   /**/
 }
 
-.footer-main-content ul {
-  width: 50%;
+.footer-main-content ul li {
+  text-align: center;
+  transform: translateX(-17%);
 }
+
 
 .footer-main-content a {
   color: #fff;
@@ -365,6 +381,8 @@ footer {
   width: 90%;
   align-self: center;
   margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
   text-align: center;
   font-size: 11px;
   color: rgba(255, 255, 255, 0.2);
@@ -382,6 +400,34 @@ footer a:hover {
   color:rgba(0, 0, 0, 0.205)
 }
 
+#logo {
+  width: 2.5em;
+}
+
+.copyright {
+  width: 99%;
+  display: grid;
+  margin: 0 auto;
+  /**
+  border: 1px solid red;
+  /**/
+}
+
+.logo {
+  width: 3em;
+  margin: 0 auto;
+  /**
+  border: 1px solid red;
+  /**/
+}
+
+#mitchkoj_logo {
+  margin-bottom: 10px;
+}
+
+#le_koj_logo {
+  width: 6em;
+}
 
 /* ------when the screen is less than 600px wide --- */
 @media screen and (max-width: 600px) {

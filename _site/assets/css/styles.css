@@ -13,7 +13,7 @@ a { text-decoration: none; color: #000; }
 .topnav { background-color: #333; overflow: hidden; }
 
 /* Style the links inside the navigation bar */
-.topnav a { float: left; display: block; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px; }
+.topnav a { float: left; display: block; color: #a02121; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px; }
 
 /* Change the color of links on hover */
 .topnav a:hover { background-color: #3B3B3B; color: black; }
@@ -27,6 +27,10 @@ a { text-decoration: none; color: #000; }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) { .topnav.responsive { position: relative; } .topnav.responsive a.icon { position: absolute; right: 0; top: 0; } .topnav.responsive a { float: none; display: block; text-align: left; } }
+
+#home-link { /**/ padding: 2px; /**/ padding-top: 7px; padding-left: 10px; padding-right: 10px; }
+
+.nav-links { transform: translateY(10%); }
 
 .fa-align-right { margin-left: 10px; }
 
@@ -86,9 +90,9 @@ footer { display: grid; grid-template-rows: 1fr 50px; margin-top: 40px; margin-b
 
 .footer-main-content { display: grid; grid-template-rows: repeat(2, 1fr); }
 
-.footer-main-content ul { display: grid; grid-template-columns: repeat(3, 1fr); /** align-self: flex-start; /**/ margin: 0 auto; /** border: 1px solid blue; /**/ }
+.footer-main-content ul { width: 50%; display: grid; grid-template-columns: repeat(3, 1fr); /** align-self: flex-start; /**/ align-content: center; margin: 0 auto; /** border: 1px solid blue; /**/ }
 
-.footer-main-content ul { width: 50%; }
+.footer-main-content ul li { text-align: center; transform: translateX(-17%); }
 
 .footer-main-content a { color: #fff; }
 
@@ -98,11 +102,21 @@ footer { display: grid; grid-template-rows: 1fr 50px; margin-top: 40px; margin-b
 
 .physical-contact p span { margin-right: 5px; }
 
-#copyright { width: 90%; align-self: center; margin: 0 auto; text-align: center; font-size: 11px; color: rgba(255, 255, 255, 0.2); /** border: 1px solid blue; /**/ }
+#copyright { width: 90%; align-self: center; margin: 0 auto; margin-top: 10px; margin-bottom: 5px; text-align: center; font-size: 11px; color: rgba(255, 255, 255, 0.2); /** border: 1px solid blue; /**/ }
 
 button:hover { border: 2px solid aqua; background-color: #fff; }
 
 footer a:hover { color: rgba(0, 0, 0, 0.205); }
+
+#logo { width: 2.5em; }
+
+.copyright { width: 99%; display: grid; margin: 0 auto; /** border: 1px solid red; /**/ }
+
+.logo { width: 3em; margin: 0 auto; /** border: 1px solid red; /**/ }
+
+#mitchkoj_logo { margin-bottom: 10px; }
+
+#le_koj_logo { width: 6em; }
 
 /* ------when the screen is less than 600px wide --- */
 @media screen and (max-width: 600px) { #about-text { font-size: 1.1em; width: 90%; } #board-content { grid-auto-flow: row; grid-template-rows: 70% 30% !important; grid-template-columns: 1fr; } .board-content img { width: 100%; max-width: 800px; margin-top: 10px; } .wrapper { width: 100%; padding: 5px; /** border: 1px solid red; /**/ transform: translateY(-15%); } .wrapper h4 { font-size: 1.5em; width: 90%; margin: 0 auto; margin-bottom: 10px; } .wrapper button { margin: 0 auto; margin-bottom: 40px; transform: translateX(5%); } .service-section { grid-auto-flow: row; grid-template-rows: repeat(3, 1fr); grid-template-columns: 1fr; /** border: 1px solid red; /**/ } .service-wrapper { width: 90%; display: grid; grid-template-rows: 1fr auto 1fr; grid-template-columns: 1fr; margin-bottom: 15px; } .service-wrapper h6 { transform: translateY(-10%); } .service-wrapper p, h6 { transform: translateY(-20%); } .contact-section { width: 90%; height: 720px; margin: 0 auto; margin-right: 20px; padding: 5px; /** border: 1px solid red; /**/ } .shape { height: 10em; width: 10em; } .shape:first-child { transform: translate(-30%, -10%); } .shape:last-child { transform: translate(-30%, -95%); } form { height: 620px; width: 80vw; max-width: 400px; /**/ padding: 40px 20px; /** border: 1px solid red; /**/ } form h3 { font-size: 2em; font-weight: 500; line-height: 42px; } form button { margin-top: 10px; } input { display: block; height: 50px; width: 90%; } textarea { display: block; height: 200px; width: 90%; } footer { margin-bottom: 5px; } .footer-main-content ul { width: 90%; } .physical-contact { grid-auto-flow: row; grid-template-rows: 40% 60%; grid-template-columns: 1fr; width: 90%; margin-top: 5px; transform: translateY(-50%); } #copyright { transform: translateY(-50%); } }

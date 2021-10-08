@@ -1,7 +1,13 @@
 <nav class="topnav" id="myTopnav">
-    {% for item in site.data.main_nav %}
-      <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
-    {% endfor %}
+  {% for item in site.data.main_nav %}
+    {% if item.name == "Home" %}
+      <a href="{{ item.link }}" {% if page.url == item.link %}class="current" id="home-link"{% endif %}>
+        <img src="/assets/images/Logos2.png" alt="mitchkoj logo" id="logo">
+      </a>
+    {% else %} 
+      <a href="{{ item.link }}" {% if page.url == item.link %}class="current nav-links"{% endif %}>{{ item.name }}</a>
+    {% endif %}
+  {% endfor %}
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
