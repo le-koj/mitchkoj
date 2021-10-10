@@ -16,8 +16,8 @@ title: Home
         SEO Integrated Webite. 
         Shopify Website Consultation.
       </h4>
-      <button >
-        <a href="/techui.html">View Portfolio<i class="fa fa-chevron-circle-right fa-align-right"></i></a>
+      <button class="btn">
+        <a href="#contact" class="btn-inner">Get In Touch<i class="fa fa-chevron-circle-right fa-align-right"></i></a>
       </button>
    </div>
   </article>
@@ -59,6 +59,8 @@ title: Home
   </article>
 </section>
 
+{% include slideshow.html %}
+
 <section class="contact-section" id="contact">
     <div class="shape"></div>
     
@@ -72,9 +74,14 @@ title: Home
       <input type="text" placeholder="johndoe@example.com" id="email" name="email">
 
       <label for="message">Message</label>
-      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message..."></textarea>
 
-      <button type="submit">Submit<i class="fa fa-chevron-circle-right fa-align-right"></i></button>
+      <button type="submit" class="btn" id="form-btn">
+        <span class="btn-inner">
+          Submit
+          <i class="fa fa-chevron-circle-right fa-align-right"></i>
+        </span>
+      </button>
     </form>
     <div class="shape last-child"></div>
 </section>

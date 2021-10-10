@@ -1,7 +1,7 @@
 - name: Home
   link: /
 - name: Portfolio
-  link: /techui.html
+  link: '#main-content'
 - name: Blog
   link: 'https://rasta-code.mitchkoj.com'
 - name: Contact
